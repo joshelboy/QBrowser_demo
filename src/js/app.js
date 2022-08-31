@@ -13,7 +13,17 @@ function BarcodeData(barcode, type, typeText) {
 function BarcodeStatus(info)
 {
     if (info.connected)
-        document.body.innerHTML += "Connected barcode reader <b>" + info.name + " " + info.version + "</b>";
+    document.body.innerHTML += "Connected barcode reader <b>" + info.name + " " + info.version + "</b>";
     else
-        document.body.innerHTML += "Barcode reader disconnected<br/>";
+    document.body.innerHTML += "Barcode reader disconnected<br/>";
+}
+
+function BatteryLevel(){
+    let battery = QBrowser.Settings.getBatteryLevel();
+    document.getElementById("battery").innerHTML = battery;
+    
+}
+
+window.onload = function() {
+    BatteryLevel();
 }
