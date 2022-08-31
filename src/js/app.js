@@ -21,3 +21,7 @@ function BarcodeStatus(info)
 function BarcodeScan(){
     QBrowser.Barcode.startScan();
 }
+
+function BarcodeStop() {
+    QBrowser.Barcode.stopScan();
+}

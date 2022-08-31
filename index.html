@@ -14,7 +14,7 @@
     <div>Das haptische Feedback und der Scan beim drücken auf das Eingabefeld können deaktiviert werden.</div>
     <div>Alternativ kann ein Button eingebaut werden, welcher den Scanner startet.</div>
     <br>
-    Eingabefeld: <input type="text" id="barcodeField_automatic" onclick="BarcodeScan()">
+    Eingabefeld: <input type="text" id="barcodeField_automatic" onclick="BarcodeScan()" onabort="BarcodeStop()">
 
     <br>
 
