@@ -18,12 +18,3 @@ function BarcodeStatus(info)
     document.body.innerHTML += "Barcode reader disconnected<br/>";
 }
 
-function BatteryLevel(){
-    let battery = QBrowser.Settings.getBatteryLevel();
-    document.getElementById("battery").innerHTML = battery;
-    
-}
-
-window.onload = function() {
-    BatteryLevel();
-}
