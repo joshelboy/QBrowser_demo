@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <head>
+    <meta lang="DE" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="src/lib/QBrowser.js"></script>
     <script type="text/javascript" src="src/js/app.js"></script>
 </head>
 <body>
-    Type: <div id="type">Null</div>
-    TypeText: <div id="typeText">Null</div>
-    Barcode: <div id="barcode">Null</div>
+    <h1>RF-Suite Scanhülle Demo</h1>
+
+    <!--Input Field example-->
+    <h3>Automatische Eingabe</h3>
+    <h4>(Vibration & Eingabe durch Scanner-Taste[Hardware] oder druck aufs Feld[Software])</h4>
+    <div>Das haptische Feedback und der Scan beim drücken auf das Eingabefeld können deaktiviert werden.</div>
+    <div>Alternativ kann ein Button eingebaut werden, welcher den Scanner startet.</div>
+    <br>
+    Eingabefeld: <input type="text" id="barcodeField_automatic" onclick="BarcodeScan()">
+
+    <br>
+
+    <hr>
+
+    <!--DOM example-->
+    <h3>DOM-Manipulation</h3>
+    <div>Type:</div>
+    <div id="type">Null</div>
+    
+    <div>TypeText:</div>
+    <div id="typeText">Null</div>
+    
+    <div>Barcode:</div>
+    <div id="barcode">Null</div>
+
+    <br>
+    <hr>
+
+    <!--Log-->
+    <div>Log:</div>
 </body>
