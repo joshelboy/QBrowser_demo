@@ -17,11 +17,3 @@ function BarcodeStatus(info)
     else
         document.body.innerHTML += "Barcode reader disconnected<br/>";
 }
-
-function BarcodeScan(){
-    QBrowser.Barcode.startScan();
-}
-
-function BarcodeStop() {
-    QBrowser.Barcode.stopScan();
-}
